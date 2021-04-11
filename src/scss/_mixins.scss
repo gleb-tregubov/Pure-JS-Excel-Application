@@ -8,15 +8,15 @@
   display: inline-block;
   color: rgba($color: #000000, $alpha: 0.7);
   user-select: none;
-  
+
   span {
-    font-size: 18px; 
+    font-size: 18px;
   }
-  
-  &:active, & .active {
+
+  &:active, &.active {
     color: $color;
   }
-  
+
   &:hover {
     background: #eee;
     cursor: pointer;
