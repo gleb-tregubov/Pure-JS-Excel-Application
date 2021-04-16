@@ -1,5 +1,5 @@
 import {
-  APPLY_STYLE,
+  APPLY_STYLE, CHANGE_DATE,
   CHANGE_STYLES,
   CHANGE_TEXT,
   CHANGE_TITLE,
@@ -38,5 +38,11 @@ export function changeTitle(data) {
   return {
     type: CHANGE_TITLE,
     data
+  }
+}
+
+export function changeDate() {
+  return {
+    type: CHANGE_DATE
   }
 }

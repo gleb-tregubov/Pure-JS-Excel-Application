@@ -1,5 +1,5 @@
 import {
-  APPLY_STYLE,
+  APPLY_STYLE, CHANGE_DATE,
   CHANGE_STYLES,
   CHANGE_TEXT,
   CHANGE_TITLE,
@@ -50,6 +50,11 @@ export function rootReducer(state, action) {
       return {
         ...state,
         [field]: action.data
+      }
+    case CHANGE_DATE:
+      return {
+        ...state,
+        openedDate: new Date().toJSON()
       }
     default: return state
   }
